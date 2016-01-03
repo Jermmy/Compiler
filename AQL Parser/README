@@ -1,0 +1,16 @@
+运行环境：Mac OS, Ubuntu
+运行方法：make之后生成AQL文件。
+        如果是提取一个文件，运行指令为：./AQL your_aql.aql your_input_file.txt
+        如果是提取一个目录下的文件，运行指令为：./AQL your_aql.aql your_dir
+        对每个提取的文件，程序会输出对应的.output文件，跟提取的.txt文件在同一个目录下
+注意：1、.aql文件跟AQL程序可以不在同一目录下。
+     2、提取的文件必须是.txt文件，其他文件会被忽略，提取单个文件的如果不是.txt后缀也会忽略。
+     3、提取的文件必须有内容，空文件会出错。
+     4、对于分组捕获的处理，考虑如下例子：
+        create view Loc as
+          extract pattern (<C.Cap>) /,/ (<S.Stt>)
+          return group 0 as Loc
+            and group 1 as Cap
+          from Cap C, Stt S;
+        由于pattern中要捕获的分组有三个(group 0默认指全部)，而return语句中只定义了group0和1，即    
+        (<S.Stt>)的分组没有声明，这种情况属于语法错误，会提示group number 2 not found.

@@ -1,0 +1,46 @@
+create view Number as
+    extract regex /[0-9]+(\,[0-9]+)?(\.[0-9]+)?/
+        on D.text as number
+    from Document D;
+
+create view Unit as
+    extract regex /%|percent|billion|million|trillion|per [a-zA-Z]+/
+        on D.text as unit
+    from Document D;
+
+create view Location as
+    extract regex /theaters|sites|locations|venues|U\.S\./
+        on D.text as location
+    from Document D;
+
+create view Time as
+    extract regex /(Christmas (Day)?)|weekend|Friday|days/
+        on D.text as time
+    from Document D;
+
+create view Money as 
+    extract pattern (/$?/) (<N.number>) <U.unit>
+        return group 0 as money
+           and group 1 as dollar
+           and group 2 as number
+    from Number N, Unit U;
+
+create view RevenueBasedOnLocation as
+    extract pattern <M.money> <Token>{1,5} <S.location>
+        return group 0 as detail
+    from Location S, Money M;
+
+create view RevenueBasedOnTime as
+    extract pattern <M.money> <Token>{1,5} <T.time>
+        return group 0 as detail
+    from Money M, Time T;
+
+
+
+output view Number;
+output view Location;
+output view Time;
+output view Money;
+output view RevenueBasedOnLocation;
+output view RevenueBasedOnTime;
+

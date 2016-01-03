@@ -1,0 +1,10 @@
+.DS_Store
+*.out
+*.o
+src/AQL/*.o
+src/AQL/*.out
+src/*.out
+src/*.o
+*.*~
+src/DOC/*.*~
+dataset/*.*~

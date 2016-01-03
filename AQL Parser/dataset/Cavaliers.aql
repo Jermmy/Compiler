@@ -1,0 +1,37 @@
+create view Point as
+    extract regex /([0-9]+[\:\-][0-9]+)|([0-9]+)/
+        on D.text as point
+    from Document D;
+
+create view Player as
+    extract regex /Kyrie Irving|Irving|LeBron James|James/
+        on D.text as player
+    from Document D;
+
+create view Team as
+    extract regex /Cavs|Cleveland|Cavaliers|Cleveland Cavaliers|Phoenix|Suns|Phoenix Suns/
+        on D.text as team
+    from Document D;
+
+create view Comment as
+    extract regex /["](\\.|[^\\"])*["]/
+        on D.text as comment
+    from Document D;
+
+create view TeamPerformance as
+    extract pattern <T.team> <Token>{1,8} <P.point> <Token>
+        return group 0 as performance
+    from Team T, Point P;
+
+create view PlayerPerformance as
+    extract pattern <T.player> <Token>{1,8} <P.point> <Token>
+        return group 0 as performance
+    from Player T, Point P;
+
+
+output view Point;
+output view Player;
+output view Team;
+output view Comment;
+output view TeamPerformance;
+output view PlayerPerformance;

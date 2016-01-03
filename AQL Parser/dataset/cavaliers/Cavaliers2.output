@@ -1,0 +1,118 @@
+Processing ../dataset/cavaliers/Cavaliers2.txt
+View: Point
++------------------+
+| point            |
++------------------+
+| 2:50:(184,188)   |
+| 101-97:(554,560) |
+| 22:(646,648)     |
+| 24:(659,661)     |
+| 3:(737,738)      |
+| 21:(752,754)     |
+| 30:(1197,1199)   |
+| 4:(1696,1697)    |
+| 36:(1707,1709)   |
+| 1:28:(1781,1785) |
+| 5-15:(1840,1844) |
+| 20:(1857,1859)   |
+| 10:(2194,2196)   |
+| 32:(2209,2211)   |
+| 3:(2484,2485)    |
+| 17:(2503,2505)   |
+| 41:(2510,2512)   |
+| 41:(2517,2519)   |
+| 5:(2520,2521)    |
+| 40:(2615,2617)   |
+| 30:(2888,2890)   |
+| 14:(2982,2984)   |
+| 10:(3389,3391)   |
+| 13:(3414,3416)   |
+| 35:(3420,3422)   |
+| 10:(3713,3715)   |
+| 3:(3844,3845)    |
++------------------+
+27 rows in set
+
+View: Player
++------------------------+
+| player                 |
++------------------------+
+| Kyrie Irving:(14,26)   |
+| Kyrie Irving:(232,244) |
+| Irving:(312,318)       |
+| Irving:(596,602)       |
+| LeBron James:(925,937) |
+| Irving:(946,952)       |
+| Irving:(1110,1116)     |
+| Irving:(1626,1632)     |
+| James:(1929,1934)      |
+| James:(2955,2960)      |
+| Irving:(3831,3837)     |
+| Irving:(4077,4083)     |
+| James:(4517,4522)      |
++------------------------+
+13 rows in set
+
+View: Team
++-----------------------+
+| team                  |
++-----------------------+
+| Cavs:(63,67)          |
+| Cleveland:(290,299)   |
+| Cavaliers:(300,309)   |
+| Cavs:(330,334)        |
+| Cleveland:(539,548)   |
+| Phoenix:(574,581)     |
+| Suns:(582,586)        |
+| Cavs:(860,864)        |
+| Cleveland:(1140,1149) |
+| Cavs:(1184,1188)      |
+| Suns:(1226,1230)      |
+| Phoenix:(1523,1530)   |
+| Cavs:(1668,1672)      |
+| Phoenix:(1802,1809)   |
+| Cavs:(1964,1968)      |
+| Cleveland:(2099,2108) |
+| Cleveland:(2428,2437) |
+| Cleveland:(2783,2792) |
+| Cavs:(4347,4351)      |
++-----------------------+
+19 rows in set
+
+View: Comment
++------------------------------------------------------------------------------------------------------------------------------------+
+| comment                                                                                                                            |
++------------------------------------------------------------------------------------------------------------------------------------+
+| "Great feeling having the kid back, you know,":(878,924)                                                                           |
+| "He does so much for our team, creates another threat on our floor, and obviously a big shot he made.":(954,1056)                  |
+| "I think we had some good moments, we had some bad moments,":(1868,1928)                                                           |
+| "Potentially for a while,":(2244,2270)                                                                                             |
+| "I don't see it happening forever. But potentially.":(2332,2384)                                                                   |
+| "I thought we were pretty generous with the minutes that we gave those 10 guys and I thought we got a return on them,":(3642,3760) |
+| "Guys, we won the game,":(4484,4508)                                                                                               |
+| "That should be the only thing that matters.":(4608,4653)                                                                          |
++------------------------------------------------------------------------------------------------------------------------------------+
+8 rows in set
+
+View: TeamPerformance
++------------------------------------------------------------------------+
+| performance                                                            |
++------------------------------------------------------------------------+
+| Cleveland to a 101-97 win:(539,564)                                    |
+| Cavs gave up 30 first:(1184,1205)                                      |
+| Cavs' eight-point lead with 4 minutes:(1668,1705)                      |
+| Phoenix team that came into the night 5-15 in:(1802,1847)              |
+| Cleveland made strides on offense, shooting better from 3-:(2428,2486) |
++------------------------------------------------------------------------+
+5 rows in set
+
+View: PlayerPerformance
++-----------------------------------------------------------------------+
+| performance                                                           |
++-----------------------------------------------------------------------+
+| Irving reach that level again -- he finished with 22 points:(596,655) |
+| James, as he finished with 14 points:(2955,2991)                      |
+| Irving's big 3 was:(3831,3849)                                        |
++-----------------------------------------------------------------------+
+3 rows in set
+

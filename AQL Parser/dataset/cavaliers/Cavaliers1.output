@@ -1,0 +1,158 @@
+Processing ../dataset/cavaliers/Cavaliers1.txt
+View: Point
++---------------------+
+| point               |
++---------------------+
+| 101-97:(49,55)      |
+| 3:04:(172,176)      |
+| 3:(295,296)         |
+| 21:(336,338)        |
+| 9:(339,340)         |
+| 101-97:(445,451)    |
+| 3:(571,572)         |
+| 96-95:(605,610)     |
+| 1:27:(616,620)      |
+| 3:(680,681)         |
+| 12:(1344,1346)      |
+| 96-92:(1383,1388)   |
+| 1:44:(1394,1398)    |
+| 22:(1421,1423)      |
+| 17:(1442,1444)      |
+| 16:(1466,1468)      |
+| 14:(1520,1522)      |
+| 0:(1543,1544)       |
+| 3:(1549,1550)       |
+| 23:(1603,1605)      |
+| 18:(1621,1623)      |
+| 105-76:(1983,1989)  |
+| 111-104:(2075,2082) |
+| 16:(2558,2560)      |
+| 21:(2575,2577)      |
+| 5:(2906,2907)       |
+| 11:(2975,2977)      |
+| 20:(3371,3373)      |
+| 17:(3601,3603)      |
+| 22:(3679,3681)      |
+| 62:(3715,3717)      |
+| 11:(3755,3757)      |
+| 18:(3761,3763)      |
+| 3:(3767,3768)       |
+| 5:(4013,4014)       |
+| 000:(4015,4018)     |
+| 3:(4046,4047)       |
+| 24:(4086,4088)      |
++---------------------+
+38 rows in set
+
+View: Player
++------------------------+
+| player                 |
++------------------------+
+| Irving:(0,6)           |
+| Kyrie Irving:(195,207) |
+| LeBron James:(266,278) |
+| Irving:(281,287)       |
+| James:(509,514)        |
+| James:(638,643)        |
+| Irving:(843,849)       |
+| Irving:(1135,1141)     |
+| Irving:(1326,1332)     |
+| Irving:(1407,1413)     |
+| James:(1510,1515)      |
+| Irving:(3178,3184)     |
+| Irving:(3375,3381)     |
+| James:(3571,3576)      |
++------------------------+
+14 rows in set
+
+View: Team
++-----------------------+
+| team                  |
++-----------------------+
+| Cavaliers:(29,38)     |
+| Suns:(44,48)          |
+| Cleveland:(365,374)   |
+| Cavaliers:(375,384)   |
+| Phoenix:(405,412)     |
+| Suns:(413,417)        |
+| Cleveland:(585,594)   |
+| Suns:(744,748)        |
+| Cavs:(771,775)        |
+| Cleveland:(966,975)   |
+| Cleveland:(1367,1376) |
+| Cavs:(1477,1481)      |
+| Suns:(1632,1636)      |
+| Cleveland:(1950,1959) |
+| Phoenix:(2018,2025)   |
+| Suns:(2105,2109)      |
+| Suns:(2543,2547)      |
+| Cavs:(2873,2877)      |
+| Suns:(3000,3004)      |
+| Cleveland:(3477,3486) |
+| Cavaliers:(3560,3569) |
+| Cleveland:(3700,3709) |
+| Suns:(3772,3776)      |
+| Suns:(3911,3915)      |
+| Cleveland:(3943,3952) |
+| Cavaliers:(4108,4117) |
+| Suns:(4148,4152)      |
++-----------------------+
+27 rows in set
+
+View: Comment
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| comment                                                                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| "It is a great feeling having the kid back,":(464,508)                                                                                                                                                       |
+| "He does so much for our team.":(521,552)                                                                                                                                                                    |
+| "J.R. Smith made an incredible winning play to save that ball,":(902,965)                                                                                                                                    |
+| "That ball was going out of bounds and it looked like it would be their possession. He made a fabulous save. Kyrie made a huge shot.":(1000,1133)                                                            |
+| "Those type of shots,":(1205,1227)                                                                                                                                                                           |
+| "it is just a calmness about it.":(1237,1270)                                                                                                                                                                |
+| "We came out and fought the game all the way down to the last minute,":(2262,2332)                                                                                                                           |
+| "so I think we put ourselves in a position to win or at least try to win. We've got to do a better job just correcting some things but I think the overall effort was better than it has been.":(2346,2537)  |
+| "It's still a loss,":(2628,2648)                                                                                                                                                                             |
+| "but it's encouraging that we're without Eric, we're out there a lot of time with Alex (Len) and Devin (Booker) and T.J., some of our young guys -- that's a good effort. You can't fault that.":(2675,2867) |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+10 rows in set
+
+View: TeamPerformance
++---------------------------------------------------------------------------------+
+| performance                                                                     |
++---------------------------------------------------------------------------------+
+| Phoenix Suns their fifth loss in a row, 101-97 on:(405,454)                     |
+| Suns their fifth loss in a row, 101-97 on:(413,454)                             |
+| Cleveland's lead to 96-95 with:(585,615)                                        |
+| Cleveland's lead to 96-95 with 1:27 to:(585,623)                                |
+| Cleveland ahead 96-92 with:(1367,1393)                                          |
+| Cleveland ahead 96-92 with 1:44 to:(1367,1401)                                  |
+| Cleveland was routed at Portland 105-76 on:(1950,1992)                          |
+| Phoenix lost an embarrassing one at home to Philadelphia 111-104.
+
+:(2018,2085) |
+| Suns have lost 16 of:(2543,2563)                                                |
+| Suns have lost 16 of their last 21,:(2543,2578)                                 |
+| Cavs took the lead for good with 5 minutes:(2873,2915)                          |
+| Cavaliers: James passed Alex English for 17th:(3560,3605)                       |
+| Cleveland shot 62 percent:(3700,3725)                                           |
++---------------------------------------------------------------------------------+
+13 rows in set
+
+View: PlayerPerformance
++-----------------------------------------------------------+
+| performance                                               |
++-----------------------------------------------------------+
+| LeBron James.
+
+Irving sank a 3-:(266,297)                 |
+| Irving sank a 3-:(281,297)                                |
+| James missed a jumper, Knight hit another 3 but:(638,685) |
+| Irving also hit a 12-:(1326,1347)                         |
+| Irving scored 22 points:(1407,1430)                       |
+| Irving scored 22 points, Smith had 17 and:(1407,1448)     |
+| James had 14 points:(1510,1529)                           |
+| James had 14 points, only two on 0-:(1510,1545)           |
+| James passed Alex English for 17th:(3571,3605)            |
++-----------------------------------------------------------+
+9 rows in set
+
